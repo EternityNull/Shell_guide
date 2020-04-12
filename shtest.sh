@@ -144,7 +144,7 @@
 #     echo "c"
 # fi
 
-######循环语句#####
+###### 循环语句 #####
 # v=(1 2 3)
 # for var in $v # 这种方式不可行
 # for var in ${v[*]}
@@ -159,6 +159,12 @@
 #     let i++
 # done
 
+
+# for file in `ls`
+for file in $(ls)  # 两种都可以
+do
+    echo ${file}
+done
 
 # for ((var; var < ${#v[*]}; var ++)) # (())也可以
 # do
@@ -208,3 +214,7 @@
 # # 或者
 # source ./xxx.sh
 
+
+# let i='1+2' # 单引号 且变量不需要$符号
+# i=$((1+2))  # $(())只是整数运算 不能调用命令
+# echo $i
