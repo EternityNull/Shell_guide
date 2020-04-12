@@ -161,10 +161,10 @@
 
 
 # for file in `ls`
-for file in $(ls)  # 两种都可以
-do
-    echo ${file}
-done
+# for file in $(ls)  # 两种都可以
+# do
+#     echo ${file}
+# done
 
 # for ((var; var < ${#v[*]}; var ++)) # (())也可以
 # do
