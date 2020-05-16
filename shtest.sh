@@ -28,7 +28,9 @@
 
 # unset xa
 # echo "$xa" # unset 之后变量不存在，值得注意的是 未声明定义变量 $之后为空，如下所示
-# echo "$xd" # 注 unset不能删除只读变量
+# echo "$xd" 
+
+# 注 unset不能删除只读变量
 
 # 声明只读变量
 # xb="hello"
