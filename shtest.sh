@@ -3,7 +3,7 @@
 
 # echo "hello world"
 # echo hello world
-# ----以上二者等效
+# 第二行是作为两个参数输出，屏蔽多余空格
 
 
 # echo "$(ls)"
